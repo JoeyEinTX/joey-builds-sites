@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{businessName}} – Preview Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Tailwind CDN (matching main site) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind config (matching main JoeyBuildsSites palette) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sand: {
+              50: "#f8f4ee",
+              100: "#f1e6d5",
+              200: "#e3cfad",
+              300: "#d3b37e"
+            },
+            brand: {
+              dark: "#1f2933",
+              accent: "#d68b36"
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Hotspot Tooltip Styles */
+    .hotspot-tooltip {
+      position: fixed;
+      background: rgba(31, 41, 51, 0.95);
+      color: #f8f4ee;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      line-height: 1.4;
+      max-width: 280px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .hotspot-tooltip.visible {
+      opacity: 1;
+    }
+
+    .hotspot-tooltip::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: 16px;
+      width: 8px;
+      height: 8px;
+      background: rgba(31, 41, 51, 0.95);
+      transform: rotate(45deg);
+    }
+
+    /* Hotspot indicator - subtle pulse on hover */
+    [data-hotspot="true"] {
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    [data-hotspot="true"]:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Optional: Add subtle indicator when not hovering */
+    [data-hotspot="true"]::after {
+      content: '';
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 8px;
+      height: 8px;
+      background: #d68b36;
+      border-radius: 50%;
+      opacity: 0.6;
+      transition: opacity 0.2s ease;
+    }
+
+    [data-hotspot="true"]:hover::after {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body class="bg-sand-50 text-brand-dark antialiased">
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-[600px] flex items-center justify-center bg-gradient-to-br from-sand-50 via-sand-100 to-sand-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-brand-dark/60 mb-4">
+          {{tagline}}
+        </p>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-brand-dark mb-6">
+          {{headline}}
+        </h1>
+
+        <p class="text-lg sm:text-xl text-brand-dark/80 mb-4">
+          {{subheadline}}
+        </p>
+
+        <p class="text-base text-brand-dark/70 mb-10 max-w-2xl mx-auto">
+          {{description}}
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button 
+            data-hotspot="true" 
+            data-hint="{{heroCTAHint}}"
+            class="inline-flex items-center px-6 py-3 rounded-full text-base font-medium bg-brand-dark text-sand-50 hover:bg-brand-accent transition-colors shadow-md">
+            {{heroCTA}}
+          </button>
+          
+          <a 
+            href="#services" 
+            class="inline-flex items-center px-5 py-2.5 rounded-full text-base font-medium border border-brand-dark/20 text-brand-dark hover:border-brand-accent hover:text-brand-accent transition-colors">
+            {{heroSecondary}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-brand-dark/60 mb-3">Services</p>
+        
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
+          {{servicesHeading}}
+        </h2>
+
+        <p class="text-base text-brand-dark/70 max-w-2xl mx-auto">
+          {{servicesSubheading}}
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Service Card 1 -->
+        <article 
+          data-hotspot="true" 
+          data-hint="{{service_0_hint}}"
+          class="bg-sand-50 border border-sand-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-200">
+          <div class="w-12 h-12 rounded-full bg-brand-dark/10 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          
+          <h3 class="text-lg font-semibold mb-2">{{service_0_name}}</h3>
+          
+          <p class="text-sm text-brand-dark/70">
+            {{service_0_description}}
+          </p>
+        </article>
+
+        <!-- Service Card 2 -->
+        <article 
+          data-hotspot="true" 
+          data-hint="{{service_1_hint}}"
+          class="bg-sand-50 border border-sand-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-200">
+          <div class="w-12 h-12 rounded-full bg-brand-dark/10 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          
+          <h3 class="text-lg font-semibold mb-2">{{service_1_name}}</h3>
+          
+          <p class="text-sm text-brand-dark/70">
+            {{service_1_description}}
+          </p>
+        </article>
+
+        <!-- Service Card 3 -->
+        <article 
+          data-hotspot="true" 
+          data-hint="{{service_2_hint}}"
+          class="bg-sand-50 border border-sand-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-200">
+          <div class="w-12 h-12 rounded-full bg-brand-dark/10 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          
+          <h3 class="text-lg font-semibold mb-2">{{service_2_name}}</h3>
+          
+          <p class="text-sm text-brand-dark/70">
+            {{service_2_description}}
+          </p>
+        </article>
+
+        <!-- Service Card 4 -->
+        <article 
+          data-hotspot="true" 
+          data-hint="{{service_3_hint}}"
+          class="bg-sand-50 border border-sand-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-200">
+          <div class="w-12 h-12 rounded-full bg-brand-dark/10 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          
+          <h3 class="text-lg font-semibold mb-2">{{service_3_name}}</h3>
+          
+          <p class="text-sm text-brand-dark/70">
+            {{service_3_description}}
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 bg-sand-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div 
+        data-hotspot="true" 
+        data-hint="{{about_hint}}"
+        class="grid lg:grid-cols-2 gap-12 items-center">
+        
+        <div>
+          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-brand-dark/60 mb-3">About Us</p>
+          
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
+            {{about_heading}}
+          </h2>
+
+          <div class="space-y-4 text-base text-brand-dark/75">
+            <p>{{about_paragraph_0}}</p>
+            <p>{{about_paragraph_1}}</p>
+            <p class="font-medium text-brand-dark">{{about_paragraph_2}}</p>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="aspect-square rounded-2xl bg-gradient-to-br from-sand-200 to-sand-300 flex items-center justify-center">
+            <div class="text-center text-brand-dark/40">
+              <svg class="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <p class="text-sm">Photo placeholder</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="py-16 bg-brand-dark text-sand-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">
+        {{cta_heading}}
+      </h2>
+
+      <p class="text-base text-sand-100/80 mb-8">
+        {{cta_subheading}}
+      </p>
+
+      <button 
+        data-hotspot="true" 
+        data-hint="{{cta_hint}}"
+        class="inline-flex items-center px-6 py-3 rounded-full text-base font-medium bg-sand-50 text-brand-dark hover:bg-brand-accent hover:text-sand-50 transition-colors shadow-lg">
+        {{cta_button}}
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 bg-sand-50 border-t border-sand-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        
+        <div>
+          <h3 class="font-semibold text-brand-dark mb-3">{{businessName}}</h3>
+          <p class="text-sm text-brand-dark/70" style="white-space: pre-line;">{{footer_description}}</p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-brand-dark mb-3">Contact</h3>
+          <p class="text-sm text-brand-dark/70">
+            {{footer_phone}}<br />
+            {{footer_email}}<br />
+            {{footer_hours}}
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-brand-dark mb-3">Services</h3>
+          <ul class="text-sm text-brand-dark/70 space-y-1">
+            <li>{{service_0_name}}</li>
+            <li>{{service_1_name}}</li>
+            <li>{{service_2_name}}</li>
+            <li>{{service_3_name}}</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-brand-dark mb-3">Service Area</h3>
+          <p class="text-sm text-brand-dark/70" style="white-space: pre-line;">{{footer_serviceArea}}</p>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-sand-200 text-center text-xs text-brand-dark/60">
+        <p>&copy; {{footer_copyright}}</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Hotspot Tooltip System -->
+  <script>
+    (function() {
+      // Create tooltip element
+      const tooltip = document.createElement('div');
+      tooltip.className = 'hotspot-tooltip';
+      document.body.appendChild(tooltip);
+
+      let currentHotspot = null;
+      let hideTimeout = null;
+
+      // Find all hotspot elements
+      const hotspots = document.querySelectorAll('[data-hotspot="true"]');
+
+      // Position tooltip near cursor
+      function positionTooltip(e, element) {
+        const rect = element.getBoundingClientRect();
+        const tooltipRect = tooltip.getBoundingClientRect();
+        
+        // Default position: below and centered on the element
+        let top = rect.bottom + 12;
+        let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
+
+        // Clamp to viewport bounds
+        const padding = 16;
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        // Prevent overflow right
+        if (left + tooltipRect.width > viewportWidth - padding) {
+          left = viewportWidth - tooltipRect.width - padding;
+        }
+
+        // Prevent overflow left
+        if (left < padding) {
+          left = padding;
+        }
+
+        // If tooltip would go off bottom, position above element instead
+        if (top + tooltipRect.height > viewportHeight - padding) {
+          top = rect.top - tooltipRect.height - 12;
+        }
+
+        tooltip.style.top = `${top}px`;
+        tooltip.style.left = `${left}px`;
+      }
+
+      // Show tooltip
+      function showTooltip(element, hint) {
+        if (currentHotspot === element) return;
+
+        clearTimeout(hideTimeout);
+        currentHotspot = element;
+        tooltip.textContent = hint;
+        
+        // Wait for next frame to get accurate dimensions
+        requestAnimationFrame(() => {
+          positionTooltip(null, element);
+          tooltip.classList.add('visible');
+        });
+      }
+
+      // Hide tooltip
+      function hideTooltip() {
+        hideTimeout = setTimeout(() => {
+          tooltip.classList.remove('visible');
+          currentHotspot = null;
+        }, 150);
+      }
+
+      // Add event listeners to each hotspot
+      hotspots.forEach(hotspot => {
+        const hint = hotspot.getAttribute('data-hint');
+        
+        if (!hint) return;
+
+        // Desktop: mouse events
+        hotspot.addEventListener('mouseenter', (e) => {
+          showTooltip(hotspot, hint);
+        });
+
+        hotspot.addEventListener('mouseleave', () => {
+          hideTooltip();
+        });
+
+        // Mobile: touch events (optional enhancement)
+        let touchTimer = null;
+        
+        hotspot.addEventListener('touchstart', (e) => {
+          // Don't interfere with scrolling
+          touchTimer = setTimeout(() => {
+            e.preventDefault();
+            showTooltip(hotspot, hint);
+          }, 300);
+        });
+
+        hotspot.addEventListener('touchend', () => {
+          clearTimeout(touchTimer);
+        });
+
+        hotspot.addEventListener('touchmove', () => {
+          clearTimeout(touchTimer);
+          hideTooltip();
+        });
+      });
+
+      // Hide tooltip when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('[data-hotspot="true"]')) {
+          hideTooltip();
+        }
+      });
+
+      // Update tooltip position on scroll
+      let scrollTimeout;
+      window.addEventListener('scroll', () => {
+        if (currentHotspot) {
+          clearTimeout(scrollTimeout);
+          tooltip.classList.remove('visible');
+          scrollTimeout = setTimeout(() => {
+            if (currentHotspot) {
+              positionTooltip(null, currentHotspot);
+              tooltip.classList.add('visible');
+            }
+          }, 100);
+        }
+      });
+
+      // Update tooltip position on window resize
+      window.addEventListener('resize', () => {
+        if (currentHotspot) {
+          positionTooltip(null, currentHotspot);
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
