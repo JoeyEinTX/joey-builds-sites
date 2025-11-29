@@ -1,0 +1,28 @@
+{
+  "name": "joey-builds-sites",
+  "version": "1.0.0",
+  "description": "AI-powered website preview generator for local businesses",
+  "main": "generate.js",
+  "scripts": {
+    "generate": "node generate.js",
+    "ai-generate": "node ai-generate.js",
+    "test": "node ai-generate.js \"I own a test business\""
+  },
+  "keywords": [
+    "website",
+    "generator",
+    "ai",
+    "preview",
+    "local-business",
+    "anthropic",
+    "claude"
+  ],
+  "author": "JoeyBuildsSites",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

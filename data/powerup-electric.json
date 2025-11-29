@@ -1,0 +1,58 @@
+{
+  "businessName": "PowerUp Electric",
+  "tagline": "Modern Electrical Solutions for Your Home",
+  "headline": "PowerUp Electric",
+  "subheadline": "Expert Panel Upgrades & EV Charger Installations",
+  "description": "Professional electrician specializing in electrical panel upgrades and electric vehicle charger installations. We help homeowners modernize their electrical systems safely and efficiently.",
+  "industry": "electrical",
+  "heroCTA": "Get Free Quote",
+  "heroCTAHint": "This could open a contact form for a free electrical consultation",
+  "heroSecondary": "Call Now",
+  "servicesHeading": "Our Electrical Services",
+  "servicesSubheading": "Reliable electrical solutions for modern homes",
+  "services": [
+    {
+      "name": "Panel Upgrades",
+      "description": "Upgrade your outdated electrical panel to handle modern power demands safely. We install new panels that meet current codes and provide reliable power distribution.",
+      "hint": "This could show before/after photos and upgrade process details"
+    },
+    {
+      "name": "EV Charger Installation",
+      "description": "Professional installation of Level 2 EV charging stations at your home. We handle permits, electrical requirements, and ensure fast, safe charging for your electric vehicle.",
+      "hint": "This could display charger types, installation timeline, and pricing"
+    },
+    {
+      "name": "Electrical Inspections",
+      "description": "Comprehensive electrical system inspections to identify safety issues and code violations. Get peace of mind knowing your home's electrical system is safe and up to standard.",
+      "hint": "This could show inspection checklist and common issues found"
+    },
+    {
+      "name": "Circuit Installation",
+      "description": "New circuit installation for appliances, outlets, and high-power devices. We ensure proper load distribution and safe electrical connections throughout your home.",
+      "hint": "This could explain different circuit types and installation process"
+    }
+  ],
+  "about": {
+    "heading": "Trusted Local Electrician",
+    "paragraphs": [
+      "PowerUp Electric has been serving homeowners with reliable electrical services for over 10 years. As a licensed and insured electrician, I specialize in helping families upgrade their electrical systems to meet modern demands.",
+      "I believe in doing the job right the first time, using quality materials and following all safety codes. Whether you're preparing for an electric vehicle or need to upgrade an old panel, I provide honest assessments and fair pricing on every project.",
+      "All work comes with a full warranty and is completed to exceed local electrical codes. I'm committed to keeping your family safe while providing the electrical capacity your modern home needs."
+    ],
+    "hint": "This could show certifications, licenses, and customer testimonials"
+  },
+  "cta": {
+    "heading": "Ready to Upgrade Your Electrical System?",
+    "subheading": "Get a free consultation and quote for your electrical project",
+    "button": "Schedule Consultation",
+    "hint": "This could open a scheduling calendar or contact form"
+  },
+  "footer": {
+    "description": "Licensed electrician specializing in panel upgrades and EV charger installations throughout the local area.",
+    "phone": "(555) 123-4567",
+    "email": "info@powerupelectric.com",
+    "hours": "Mon-Fri: 7:00 AM - 6:00 PM, Sat: 8:00 AM - 4:00 PM",
+    "serviceArea": "Serving all of Metro Area and surrounding communities",
+    "copyright": "© 2024 PowerUp Electric. All rights reserved."
+  }
+}

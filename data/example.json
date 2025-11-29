@@ -1,0 +1,57 @@
+{
+  "businessName": "BrightWire Electric",
+  "tagline": "Licensed & Insured Since 2015",
+  "headline": "BrightWire Electric",
+  "subheadline": "Reliable Residential & Light Commercial Electrical Work",
+  "description": "From panel upgrades to EV charger installations, we handle all your electrical needs with quality craftsmanship and transparent pricing.",
+  "heroCTA": "Get a Free Estimate",
+  "heroCTAHint": "This could open a quote request form where customers enter their project details and contact info.",
+  "heroSecondary": "View Services",
+  "services": [
+    {
+      "name": "Panel Upgrades",
+      "description": "Modernize your electrical system with a new service panel that meets today's power demands.",
+      "hint": "This could link to a detailed service page with photo galleries, pricing ranges, and a contact form specific to panel upgrades."
+    },
+    {
+      "name": "EV Charger Installs",
+      "description": "Professional installation of Level 2 home charging stations for all electric vehicle makes.",
+      "hint": "This could scroll to a dedicated EV charging section with installation packages, equipment options, and rebate information."
+    },
+    {
+      "name": "Lighting Design",
+      "description": "Custom indoor and outdoor lighting solutions that enhance your space and improve energy efficiency.",
+      "hint": "This could open a portfolio modal showcasing before/after photos of lighting projects with customer testimonials."
+    },
+    {
+      "name": "Troubleshooting",
+      "description": "Fast diagnosis and repair of electrical issues, from tripped circuits to faulty outlets.",
+      "hint": "This could trigger an emergency contact modal with phone number, service hours, and an option to describe the urgent issue."
+    }
+  ],
+  "servicesHeading": "What We Do Best",
+  "servicesSubheading": "Professional electrical services for homes and light commercial properties throughout the metro area.",
+  "about": {
+    "heading": "Quality Work. Fair Pricing. No Surprises.",
+    "paragraphs": [
+      "BrightWire Electric has been serving homeowners and small businesses since 2015. Our team of licensed electricians brings decades of combined experience to every project, big or small.",
+      "We believe in transparent pricing, quality craftsmanship, and treating every home like it's our own. Whether you need a simple outlet repair or a complete panel upgrade, we're here to help.",
+      "All work backed by our satisfaction guarantee and full licensing and insurance."
+    ],
+    "hint": "This could expand into a full 'About Us' page with team bios, certifications, service area map, and company history."
+  },
+  "cta": {
+    "heading": "Ready to upgrade your electrical system?",
+    "subheading": "Let's discuss your project and provide a free, no-obligation estimate.",
+    "button": "Schedule a Call",
+    "hint": "This could open a scheduling tool integrated with your calendar, or trigger a phone call on mobile devices."
+  },
+  "footer": {
+    "description": "Licensed & Insured\nServing the Metro Area",
+    "phone": "(555) 123-4567",
+    "email": "info@brightwire.com",
+    "hours": "Mon-Fri: 7am - 6pm",
+    "serviceArea": "Metro City & surrounding areas\nWithin 30 miles of downtown",
+    "copyright": "2024 BrightWire Electric. All rights reserved. License #12345."
+  }
+}

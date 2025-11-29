@@ -1,0 +1,58 @@
+{
+  "businessName": "GreenScape Lawn Care",
+  "tagline": "Professional Lawn Care Since 2010",
+  "headline": "GreenScape Lawn Care",
+  "subheadline": "Beautiful, Healthy Lawns for Your Home",
+  "description": "From weekly mowing to seasonal treatments, we keep your lawn looking its best year-round with reliable service and professional results.",
+  "industry": "landscaping",
+  "heroCTA": "Get a Free Quote",
+  "heroCTAHint": "This could open a simple quote form where customers enter their address, lawn size, and preferred services.",
+  "heroSecondary": "View Services",
+  "servicesHeading": "Our Services",
+  "servicesSubheading": "Complete lawn care solutions for residential properties throughout the area.",
+  "services": [
+    {
+      "name": "Weekly Mowing",
+      "description": "Professional mowing, edging, and trimming to keep your lawn neat and healthy all season long.",
+      "hint": "This could link to a detailed service page with pricing tiers, schedule options, and before/after photos."
+    },
+    {
+      "name": "Fertilization Programs",
+      "description": "Custom fertilization schedules designed for your grass type and local climate conditions.",
+      "hint": "This could open a seasonal program guide showing treatment schedules and expected results for each season."
+    },
+    {
+      "name": "Spring & Fall Cleanup",
+      "description": "Thorough seasonal cleanups including leaf removal, bed prep, and debris clearing.",
+      "hint": "This could display a gallery of cleanup projects with seasonal package details and add-on options."
+    },
+    {
+      "name": "Aeration & Seeding",
+      "description": "Core aeration and overseeding services to improve soil health and fill in thin or bare spots.",
+      "hint": "This could show timing recommendations, process videos, and results timeline with booking options."
+    }
+  ],
+  "about": {
+    "heading": "Local Expertise. Reliable Service.",
+    "paragraphs": [
+      "GreenScape Lawn Care has been serving homeowners since 2010. Our team understands local soil conditions, grass types, and seasonal challenges to deliver results that last.",
+      "We believe in straightforward pricing, dependable weekly service, and treating every lawn like it's our own. Whether you need basic mowing or a complete care program, we're here to help.",
+      "All work is backed by our satisfaction guarantee. Licensed and insured for your peace of mind."
+    ],
+    "hint": "This could expand into a full company page with team photos, service area map, certifications, and customer testimonials."
+  },
+  "cta": {
+    "heading": "Ready for a lawn you'll love?",
+    "subheading": "Get a free quote and see how easy great lawn care can be.",
+    "button": "Request Free Quote",
+    "hint": "This could open a quote form with service selection, or trigger a phone call on mobile devices during business hours."
+  },
+  "footer": {
+    "description": "Licensed & Insured\nServing Your Local Area",
+    "phone": "(555) 234-5678",
+    "email": "info@greenscape-lawn.com",
+    "hours": "Mon-Fri: 7am - 5pm\nSat: 8am - 2pm",
+    "serviceArea": "Serving all of Metro County\nWithin 25 miles of downtown",
+    "copyright": "2024 GreenScape Lawn Care. All rights reserved. License #LC-12345."
+  }
+}

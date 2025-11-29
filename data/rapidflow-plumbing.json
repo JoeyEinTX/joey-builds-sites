@@ -1,0 +1,58 @@
+{
+  "businessName": "RapidFlow Plumbing",
+  "tagline": "24/7 Emergency Plumbing Solutions",
+  "headline": "Emergency Plumbing Repairs When You Need Them Most",
+  "subheadline": "Fast, reliable service available 24/7",
+  "description": "We specialize in urgent plumbing repairs with same-day service guaranteed. Our licensed plumbers are ready to handle your emergency with professional expertise and fair pricing.",
+  "industry": "plumbing",
+  "heroCTA": "Call Now for Emergency Service",
+  "heroCTAHint": "This could dial the emergency plumbing hotline directly",
+  "heroSecondary": "Get Free Estimate",
+  "servicesHeading": "Emergency Plumbing Services",
+  "servicesSubheading": "Professional solutions for urgent plumbing problems",
+  "services": [
+    {
+      "name": "Burst Pipe Repair",
+      "description": "Quick response to stop water damage from burst or leaking pipes. We'll locate the problem and get your water flowing safely again.",
+      "hint": "This could show before/after photos of pipe repairs"
+    },
+    {
+      "name": "Drain & Sewer Clearing",
+      "description": "Emergency drain cleaning and sewer line clearing to restore proper flow. Available 24/7 for urgent blockages and backups.",
+      "hint": "This could link to drain cleaning equipment demonstration"
+    },
+    {
+      "name": "Water Heater Repair",
+      "description": "Same-day water heater repairs and replacements. Don't go without hot water - we'll diagnose and fix the issue fast.",
+      "hint": "This could open water heater troubleshooting guide"
+    },
+    {
+      "name": "Fixture Installation",
+      "description": "Professional installation of toilets, faucets, and fixtures. Quality work with warranties on all parts and labor.",
+      "hint": "This could show fixture gallery and installation process"
+    }
+  ],
+  "about": {
+    "heading": "Your Trusted Emergency Plumbing Experts",
+    "paragraphs": [
+      "RapidFlow Plumbing was founded to provide reliable emergency plumbing services when homeowners need help most. We understand that plumbing emergencies don't wait for business hours, which is why we're available 24/7 every day of the year.",
+      "Our approach is simple: respond quickly, diagnose accurately, and fix it right the first time. We believe in transparent pricing with no hidden fees, so you'll know the cost upfront before any work begins.",
+      "All our plumbers are licensed, insured, and background-checked professionals with years of experience. We guarantee our work and offer same-day service for most emergency repairs."
+    ],
+    "hint": "This could expand to show team photos and certifications"
+  },
+  "cta": {
+    "heading": "Need Emergency Plumbing Service?",
+    "subheading": "Don't wait - call now for immediate assistance",
+    "button": "Call Emergency Line",
+    "hint": "This could connect directly to 24/7 emergency dispatch"
+  },
+  "footer": {
+    "description": "Professional emergency plumbing services available 24/7. Licensed, insured, and ready to help with all your urgent plumbing needs.",
+    "phone": "(555) 123-7529",
+    "email": "emergency@rapidflowplumbing.com",
+    "hours": "24/7 Emergency Service Available",
+    "serviceArea": "Serving the greater metro area and surrounding communities",
+    "copyright": "© 2024 RapidFlow Plumbing. All rights reserved."
+  }
+}

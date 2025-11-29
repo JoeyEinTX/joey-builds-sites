@@ -1,0 +1,58 @@
+{
+  "businessName": "Arlington Clean Co",
+  "tagline": "Your trusted local cleaning experts",
+  "headline": "Professional House Cleaning in Arlington",
+  "subheadline": "Reliable, thorough cleaning services you can trust",
+  "description": "We provide professional residential cleaning services throughout Arlington. Our experienced team delivers spotless results so you can enjoy more time with what matters most.",
+  "industry": "cleaning",
+  "heroCTA": "Get Free Quote",
+  "heroCTAHint": "This could open a quick quote form to get pricing",
+  "heroSecondary": "Call Today",
+  "servicesHeading": "Our Cleaning Services",
+  "servicesSubheading": "Complete home cleaning solutions tailored to your needs",
+  "services": [
+    {
+      "name": "Regular House Cleaning",
+      "description": "Weekly, bi-weekly, or monthly cleaning to keep your home consistently spotless. We handle all the basics so you don't have to.",
+      "hint": "This could show detailed service checklist and pricing"
+    },
+    {
+      "name": "Deep Cleaning",
+      "description": "Comprehensive top-to-bottom cleaning perfect for spring cleaning, move-ins, or special occasions. Every corner gets attention.",
+      "hint": "This could display before/after photos and service timeline"
+    },
+    {
+      "name": "Move-In/Move-Out",
+      "description": "Thorough cleaning for transitions. We ensure your new home is pristine or help you get your deposit back.",
+      "hint": "This could show move-in cleaning checklist and booking calendar"
+    },
+    {
+      "name": "Post-Construction Cleanup",
+      "description": "Specialized cleaning after renovations or construction work. We safely remove dust, debris, and construction residue.",
+      "hint": "This could link to construction cleanup portfolio and equipment details"
+    }
+  ],
+  "about": {
+    "heading": "About Arlington Clean Co",
+    "paragraphs": [
+      "Founded in 2018, Arlington Clean Co has been serving Arlington families with reliable, professional cleaning services. We understand that your home is your sanctuary, and we treat it with the respect and care it deserves.",
+      "Our approach is simple: consistent quality, honest pricing, and exceptional service. We use eco-friendly products whenever possible and bring our own supplies to every job. Our team is fully insured and background-checked for your peace of mind.",
+      "We're proud to be Arlington's trusted cleaning service with over 500 satisfied customers. Every job comes with our satisfaction guarantee - if you're not happy, we'll make it right."
+    ],
+    "hint": "This could show team photos and customer testimonials"
+  },
+  "cta": {
+    "heading": "Ready for a Spotless Home?",
+    "subheading": "Get your free quote today and see why Arlington trusts us",
+    "button": "Schedule Cleaning",
+    "hint": "This could open booking calendar or contact form"
+  },
+  "footer": {
+    "description": "Professional house cleaning services throughout Arlington and surrounding areas.",
+    "phone": "(703) 555-0123",
+    "email": "info@arlingtonclean.co",
+    "hours": "Monday-Friday: 8AM-6PM, Saturday: 9AM-4PM",
+    "serviceArea": "Serving Arlington, Alexandria, Falls Church, and McLean",
+    "copyright": "© 2024 Arlington Clean Co. All rights reserved."
+  }
+}
